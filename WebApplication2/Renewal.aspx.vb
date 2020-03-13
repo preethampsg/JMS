@@ -7,23 +7,76 @@ Public Class WebForm4
     Dim cmd As New MySqlCommand
     Dim cmd1 As New MySqlCommand
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        Try
+            SubscriptionsTable()
+        Catch ex As MySql.Data.MySqlClient.MySqlException
+            MsgBox("ERROR" & ex.ToString)
 
+        End Try
     End Sub
 
 
 
-    Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        con.Open()
-        Dim da As MySqlDataAdapter
-        Dim dt As New DataTable()
+    Function SubscriptionsTable()
+        Subdiscontinued()
+        Subapproaching()
+        SubAvailable()
+    End Function
 
-        Dim cmdstr As String
-        cmdstr = "select code as JCode ,title as Title ,fromDate as StartDate, toDate as EndDate from master where todate is not null order by toDate,code"
-        cmd = New MySqlCommand(cmdstr, con)
-        da = New MySqlDataAdapter(cmd)
-        da.Fill(dt)
-        GridView1.DataSource = dt
-        GridView1.DataBind()
-        con.Close()
-    End Sub
+    Function Subdiscontinued()
+        Try
+            con.Open()
+            Dim da As MySqlDataAdapter
+            Dim dt As New DataTable()
+            Dim cmd As New MySqlCommand
+            Dim cmdstr As String
+            cmdstr = My.Resources.Subscription & "dis"
+            cmd = New MySqlCommand(cmdstr, con)
+            da = New MySqlDataAdapter(cmd)
+            da.Fill(dt)
+            subdis.DataSource = dt
+            subdis.DataBind()
+            con.Close()
+        Catch ex As Exception
+            MsgBox("Error" & ex.ToString)
+        End Try
+    End Function
+
+    Function Subapproaching()
+        Try
+            con.Open()
+            Dim da As MySqlDataAdapter
+            Dim dt As New DataTable()
+            Dim cmd As New MySqlCommand
+            Dim cmdstr As String
+            cmdstr = My.Resources.Subscription & "app"
+            cmd = New MySqlCommand(cmdstr, con)
+            da = New MySqlDataAdapter(cmd)
+            da.Fill(dt)
+            subapp.DataSource = dt
+            subapp.DataBind()
+            con.Close()
+        Catch ex As Exception
+            MsgBox("Error" & ex.ToString)
+        End Try
+    End Function
+
+    Function SubAvailable()
+        Try
+            con.Open()
+            Dim da As MySqlDataAdapter
+            Dim dt As New DataTable()
+            Dim cmd As New MySqlCommand
+            Dim cmdstr As String
+            cmdstr = My.Resources.Subscription & "avl"
+            cmd = New MySqlCommand(cmdstr, con)
+            da = New MySqlDataAdapter(cmd)
+            da.Fill(dt)
+            subavl.DataSource = dt
+            subavl.DataBind()
+            con.Close()
+        Catch ex As Exception
+            MsgBox("Error" & ex.ToString)
+        End Try
+    End Function
 End Class

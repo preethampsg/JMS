@@ -11,32 +11,41 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class WebForm4
+Partial Public Class WebForm5
 
     '''<summary>
-    '''subdis control.
+    '''form1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents subdis As Global.System.Web.UI.WebControls.GridView
+    Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
-    '''subapp control.
+    '''username control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents subapp As Global.System.Web.UI.WebControls.GridView
+    Protected WithEvents username As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''subavl control.
+    '''password control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents subavl As Global.System.Web.UI.WebControls.GridView
+    Protected WithEvents password As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''login control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents login As Global.System.Web.UI.WebControls.Button
 End Class

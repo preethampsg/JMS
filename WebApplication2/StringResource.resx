@@ -117,11 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Renewal" xml:space="preserve">
-    <value>select * from </value>
+  <data name="PublisherSelect" xml:space="preserve">
+    <value>select * from publisher</value>
   </data>
-  <data name="Subscription" xml:space="preserve">
-    <value>SELECT `Journal Code`,`Journal Title`,date_format(fromdate,'%d-%m-%Y') as FromDate, date_format(todate,'%d-%m-%Y') as ToDate 
-From sub</value>
+  <data name="Renewal" xml:space="preserve">
+    <value>select * from subscription</value>
   </data>
 </root>

@@ -24,22 +24,26 @@ Namespace My.Resources
     '''</summary>
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0"),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute(),  _
-     Global.Microsoft.VisualBasic.HideModuleNameAttribute()>  _
-    Friend Module Resources
+     Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute()>  _
+    Public Class StringResource
         
-        Private resourceMan As Global.System.Resources.ResourceManager
+        Private Shared resourceMan As Global.System.Resources.ResourceManager
         
-        Private resourceCulture As Global.System.Globalization.CultureInfo
+        Private Shared resourceCulture As Global.System.Globalization.CultureInfo
+        
+        <Global.System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")>  _
+        Friend Sub New()
+            MyBase.New
+        End Sub
         
         '''<summary>
         '''  Returns the cached ResourceManager instance used by this class.
         '''</summary>
         <Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Friend ReadOnly Property ResourceManager() As Global.System.Resources.ResourceManager
+        Public Shared ReadOnly Property ResourceManager() As Global.System.Resources.ResourceManager
             Get
                 If Object.ReferenceEquals(resourceMan, Nothing) Then
-                    Dim temp As Global.System.Resources.ResourceManager = New Global.System.Resources.ResourceManager("WebApplication2.Resources", GetType(Resources).Assembly)
+                    Dim temp As Global.System.Resources.ResourceManager = New Global.System.Resources.ResourceManager("WebApplication2.StringResource", GetType(StringResource).Assembly)
                     resourceMan = temp
                 End If
                 Return resourceMan
@@ -51,7 +55,7 @@ Namespace My.Resources
         '''  resource lookups using this strongly typed resource class.
         '''</summary>
         <Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Friend Property Culture() As Global.System.Globalization.CultureInfo
+        Public Shared Property Culture() As Global.System.Globalization.CultureInfo
             Get
                 Return resourceCulture
             End Get
@@ -61,22 +65,21 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to select * from .
+        '''  Looks up a localized string similar to select * from publisher.
         '''</summary>
-        Friend ReadOnly Property Renewal() As String
+        Public Shared ReadOnly Property PublisherSelect() As String
             Get
-                Return ResourceManager.GetString("Renewal", resourceCulture)
+                Return ResourceManager.GetString("PublisherSelect", resourceCulture)
             End Get
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to SELECT `Journal Code`,`Journal Title`,date_format(fromdate,&apos;%d-%m-%Y&apos;) as FromDate, date_format(todate,&apos;%d-%m-%Y&apos;) as ToDate 
-        '''From sub.
+        '''  Looks up a localized string similar to select * from subscription.
         '''</summary>
-        Friend ReadOnly Property Subscription() As String
+        Public Shared ReadOnly Property Renewal() As String
             Get
-                Return ResourceManager.GetString("Subscription", resourceCulture)
+                Return ResourceManager.GetString("Renewal", resourceCulture)
             End Get
         End Property
-    End Module
+    End Class
 End Namespace

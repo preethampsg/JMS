@@ -14,6 +14,15 @@ Option Explicit On
 Partial Public Class publisher
 
     '''<summary>
+    '''pubId control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pubId As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
     '''Label1 control.
     '''</summary>
     '''<remarks>
@@ -95,13 +104,13 @@ Partial Public Class publisher
     Protected WithEvents fax As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''contactPerson control.
+    '''agentname control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents contactPerson As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents agentname As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Save control.
@@ -122,6 +131,15 @@ Partial Public Class publisher
     Protected WithEvents clearContents As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
+    '''update control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents update As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
     '''deleteRecord control.
     '''</summary>
     '''<remarks>
@@ -129,4 +147,13 @@ Partial Public Class publisher
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents deleteRecord As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''GridView1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents GridView1 As Global.System.Web.UI.WebControls.GridView
 End Class

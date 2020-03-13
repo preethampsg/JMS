@@ -11,158 +11,131 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class WebForm3
+Partial Public Class Report1
 
     '''<summary>
-    '''code control.
+    '''List1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents code As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents List1 As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''title control.
+    '''List2 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents title As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents List2 As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''period control.
+    '''Groupby control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents period As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents Groupby As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''fromDate control.
+    '''List3 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents fromDate As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents List3 As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''toDate control.
+    '''Journals control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents toDate As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents Journals As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
-    '''vendor control.
+    '''Publishers control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents vendor As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents Publishers As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
-    '''paymentDate control.
+    '''jpubl control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents paymentDate As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents jpubl As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
-    '''ModeRadioButton control.
+    '''periodicityl control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ModeRadioButton As Global.System.Web.UI.WebControls.RadioButtonList
+    Protected WithEvents periodicityl As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
-    '''paymentDetails control.
+    '''jdeptl control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents paymentDetails As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents jdeptl As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
-    '''amt control.
+    '''jprogl control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents amt As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents jprogl As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
-    '''remarks control.
+    '''issuesl control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents remarks As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents issuesl As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
-    '''VoucherRef control.
+    '''subdis control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents VoucherRef As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents subdis As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
-    '''save control.
+    '''subapp control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents save As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents subapp As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
-    '''clear control.
+    '''subavl control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents clear As Global.System.Web.UI.WebControls.Button
-
-    '''<summary>
-    '''updateSave control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents updateSave As Global.System.Web.UI.WebControls.Button
-
-    '''<summary>
-    '''delete control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents delete As Global.System.Web.UI.WebControls.Button
-
-    '''<summary>
-    '''GridView1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents GridView1 As Global.System.Web.UI.WebControls.GridView
+    Protected WithEvents subavl As Global.System.Web.UI.WebControls.GridView
 End Class

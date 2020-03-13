@@ -9,7 +9,7 @@
             width: 100%;
         }
         .auto-style2 {
-            width: 262px;
+            width: 123px;
         }
     </style>
 
@@ -19,8 +19,34 @@
                 <tr>
                     <td class="auto-style2">JCode*</td>
                     <td>
-                        <asp:TextBox ID="codeBox" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="codeBox" runat="server" AutoPostBack="True"></asp:TextBox>
                     </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">Title</td>
+                    <td>
+                        <asp:TextBox ID="TitleBox" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">Periodicity</td>
+                    <td>
+                        <asp:TextBox ID="periodicity" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td>
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style2">Volume Number*</td>
@@ -29,22 +55,42 @@
                     </td>
                 </tr>
                 <tr>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
                     <td class="auto-style2">Issue Number*</td>
                     <td>
-                        <asp:TextBox ID="IssueNoBox" runat="server" TextMode="Number"></asp:TextBox>
+                        <asp:TextBox ID="IssueNoBox" runat="server" TextMode="Number" AutoPostBack="True"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style2">From Date</td>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">From Date*</td>
                     <td>
                         <asp:TextBox ID="FromDateBox" runat="server" TextMode="Date"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style2">To Date</td>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">To Date*</td>
                     <td>
                         <asp:TextBox ID="ToDateBox" runat="server" TextMode="Date"></asp:TextBox>
                     </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td>
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style2">Merge Remark</td>
@@ -54,13 +100,29 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">Received Date*</td>
+                    <td>
+                        <asp:TextBox ID="issueDate" runat="server" TextMode="Date"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style2">
-                        <asp:Button ID="Button1" runat="server" Text="Save issue" />
+                    <td colspan="2">
+                        <asp:Button ID="saveButton" runat="server" Text="Save issue" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Button ID="clear" runat="server" Text="Clear contents" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Button ID="updateSave" runat="server" Text="Update and Save" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Button ID="delete" runat="server" Text="Delete record" />
                     </td>
-                    <td>&nbsp;</td>
                 </tr>
             </table>
         </div>
